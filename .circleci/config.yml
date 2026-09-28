@@ -17,9 +17,7 @@ jobs:
       - checkout
       - run:
           name: Deploy (dummy)
-          command: |
-            echo "Deploying to production..."
-            echo "Deployment complete!"
+          command: ./scripts/deploy.sh
 
 workflows:
   build-and-deploy:
